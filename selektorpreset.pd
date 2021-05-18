@@ -1,0 +1,25 @@
+#N canvas 565 136 450 300 10;
+#N canvas 1 82 842 471 presets 0;
+#X obj 407 29 inlet;
+#X obj 419 79 sel 0 1 2 3 4 5 6 7;
+#X msg 105 200 \; temps 166 \; rang 2 \;;
+#X msg 188 200 \; temps 166 \; rang 2 \;;
+#X msg 270 199 \; temps 166 \; rang 2 \;;
+#X msg 359 199 \; temps 166 \; rang 2 \;;
+#X msg 454 211 \; temps 166 \; rang 2 \;;
+#X msg 537 211 \; temps 166 \; rang 2 \;;
+#X msg 619 210 \; temps 166 \; rang 2 \;;
+#X msg 708 210 \; temps 166 \; rang 2 \;;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 1 3 0;
+#X connect 1 2 4 0;
+#X connect 1 3 5 0;
+#X connect 1 4 6 0;
+#X connect 1 5 7 0;
+#X connect 1 6 8 0;
+#X connect 1 7 9 0;
+#X restore 88 237 pd presets;
+#X obj 88 48 vradio 23 1 0 8 empty empty empty 0 -8 0 10 -262144 -1
+-1 0;
+#X connect 1 0 0 0;
